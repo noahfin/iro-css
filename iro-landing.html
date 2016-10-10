@@ -24,7 +24,7 @@
     height: 80px;
    }
 .navbar-default a{
-
+    padding-top: 12px;
     height: 80px;
 
     }
@@ -44,6 +44,16 @@
  	font-size: 22px;
   color: rgb(34,102,102);
  }
+
+ .search-form {
+    border-radius: 30px 0px 0px 30px;
+    /*border-radius:Top-left, Top-right, Bottom-right, Bottom-left;*/
+}
+/*to cange only one form and not all give unique class name like  class="search-form" */
+ .search-btn {
+    border-radius: 0px 30px 30px 0px;
+    cursor:pointer;
+}
  
  header.top-nav {
  	display: inline;
@@ -225,21 +235,6 @@
 </body>
 </html>
 <header>
-  <!-- <div class="container" >
-    <nav class="navbar navbar-light bg-faded">
-      <div class="logo-contain">
-        <a  class="logo-nav"ng-href='#/'>I.ro
-          <span  class=" nav-brand-i glyphicon glyphicon-fire"></span>
-        </a>
-      </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li>Home</li>
-        <li>Art</li>
-        <li>Login</li>
-        <li>logout</li>
-      </ul>
-    </nav>
-  </div> -->
   <nav class = "navbar navbar-default" role = "navigation">
     <div class="container">
    
@@ -251,7 +246,7 @@
    
    <div>
       <ul class = "nav navbar-nav">
-         <li class = ""><a href = "#">Artist</a></li>
+         <li class = ""><a href = "#">Artists</a></li>
          <li><a href = "#">Art</a></li>
       
          <li class = "dropdown">
@@ -273,6 +268,18 @@
             </ul>
             
          </li>
+         <li class="pull-right">
+          <div >
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control search-form " placeholder="Search" name="q">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default search-btn" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </li>
       
       </ul>
    </div>
@@ -284,8 +291,6 @@
     <p>Creativity</p>
       <div class="btn sign-btn">Sign up!</div>
 </div>
-
-	
 
 
    <!-- Marketing messaging and featurettes
