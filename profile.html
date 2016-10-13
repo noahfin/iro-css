@@ -6,11 +6,16 @@
 	<title>Profile</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 	<style type="text/css">
 	@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700);
 
  header {
 	 	height: 80px;
+	 }
+	 .outside-border {
+	 	border-right: 1px solid #eee;
+	 	border-left: 1px solid #eee;
 	 }
    .navbar-default {
     padding-top: 15px;
@@ -21,6 +26,25 @@
     padding-top: 12px;
     height: 80px;
     }
+    .circle-logo {	
+			width: 50px;
+			height: 50px;
+			background: rgb(34,102,102);
+	
+
+	     position: relative;
+	     left: 534px;
+	
+			border-radius: 50%;
+		}
+
+		.login-brand-i {
+			color: #fff;
+			font-size: 28px;
+			text-align: center;
+			padding-top: 10px;
+			padding-right: 1.5px;
+		}
 
    .sign-btn {
     margin: auto;
@@ -38,15 +62,21 @@
 	 	font-size: 22px;
 	  color: rgb(34,102,102);
 	 }
+.search-form{
+	 margin-top: -57px;
+}
 
  .search-form {
     border-radius: 30px 0px 0px 30px;
     /*border-radius:Top-left, Top-right, Bottom-right, Bottom-left;*/
+   
+
 }
 /*to cange only one form and not all give unique class name like  class="search-form" */
  .search-btn {
     border-radius: 0px 30px 30px 0px;
     cursor:pointer;
+    margin-top: -80px;
 }
 
 .page-wrapper{ 
@@ -145,7 +175,6 @@ color:rgb(34,102,102);
 	width: 400px;
 	height: auto;
 	float: left;
-
 }
 .box {
 	background: whitesmoke;
@@ -155,8 +184,57 @@ color:rgb(34,102,102);
 	width: 50%;
 	float: left;
 	padding: 20px 14px;
+}
+.header-rightside a{
+	padding-top: 14px;
+	color: black;
+	padding-right: 12PX;
+}
+
+.header-rightside {
+	padding-top: 12px;
+}
+.header-rightside img {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	margin-top: -5px;
+}
+ .header-rightside .fa-envelope{
+	font-size: 19px;
 
 }
+.header-rightside .fa-bell {
+	font-size: 23px;
+	position: relative;
+	top: 2px;
+	left: 6px;
+}
+.header-rightside  .label {
+	border-radius: 50%;
+	position: relative;
+	right:6px;
+	top: -8px;
+	border: 1.5px solid #fff;
+	background-color: rgb(34,102,102);
+	color: #fff;
+}
+.navbar-content {
+	text-align: center;
+	height: 300px;
+
+
+}
+
+
+#navBarSearchForm input[type=text]{width:230px !important;}
+
+.header-top .dropdown-menu {
+     
+    left: -55px;
+    padding: 17px;
+}
+
 
 @media (max-width: 1320px) {
 	.tab-section {
@@ -244,7 +322,7 @@ color:rgb(34,102,102);
 <body>
 <header>
   <nav class = "navbar navbar-default" role = "navigation">
-    <div class="page-wrapper">
+    <div class="page-wrapper outside-border">
    
    <div class = "navbar-header">
        <a  class="logo-nav navbar-brand"ng-href='#/'>I.ro
@@ -254,44 +332,64 @@ color:rgb(34,102,102);
    
    <div>
       <ul class = "nav navbar-nav">
-         <li class = ""><a href = "#">Artists</a></li>
+<!--          <li class = ""><a href = "#">Artists</a></li>
          <li><a href = "#">Art</a></li>
-      
-         <li class = "dropdown">
-            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
-               Groups 
-               <b class = "caret"></b>
-            </a>
-            
-            <ul class = "dropdown-menu">
-               <li><a href = "#">jmeter</a></li>
-               <li><a href = "#">EJB</a></li>
-               <li><a href = "#">Jasper Report</a></li>
-               
-               <li class = "divider"></li>
-               <li><a href = "#">Separated link</a></li>
-               
-               <li class = "divider"></li>
-               <li><a href = "#">One more separated link</a></li>
-            </ul>
-            
-         </li>
-         <li class="pull-right">
-          
-        </li>
-      
-      </ul> 
-      <ul class="nav navbar-nav pull-right">
-       <div >
-            <form class="navbar-form" role="search">
+      	 <li><a href = "#">Groups</a></li> -->
+      	 <div class="circle-logo">
+   					<center> <div  class=" login-brand-i glyphicon glyphicon-fire"></div></center>  
+   				</div>
+   				
+         <li>
+       <div  class="search-contain">
+            <form class="navbar-form" role="search" id="navBarSearchForm">
               <div class="input-group">
-                <input type="text" class="form-control search-form " placeholder="Search" name="q">
+                <input type="text" class="form-control search-form" placeholder="Search" name="q" >
                   <div class="input-group-btn">
                     <button class="btn btn-default search-btn" type="submit"><i class="glyphicon glyphicon-search"></i></button>
                   </div>
               </div>
             </form>
           </div>
+          </li>
+         <li class="pull-right">
+          
+        </li>
+      
+      </ul> 
+      <ul class="nav navbar-nav pull-right">
+    
+          <li>
+      			<div class="header-rightside">
+                <ul class="list-inline header-top pull-right">
+                    <li class="hidden-xs"><a href="#" class="add-project" data-toggle="modal" data-target="#add_project">Add Art</a></li>
+                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                    <li>
+                        <a href="#" class="icon-info">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                            <span class="label label-primary">3</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">	<img src="https://images.unsplash.com/photo-1463430144406-394c977562d7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a9fc9b740bd7017f672c4baf212e6caf" alt="user">
+                            <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="navbar-content">
+                                    <span>JS Krishna</span>
+                                    <p class="text-muted small">
+                                        me@jskrishna.com
+                                    </p>
+                                    <div class="divider">
+                                    </div>
+                                    <a href="#" class="view btn-sm active">View Profile</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+     </li>
       </ul>
      </div>
    
@@ -574,7 +672,8 @@ color:rgb(34,102,102);
 	  </div>
 	 </div>
 </div>
-
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>
