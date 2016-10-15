@@ -33,7 +33,7 @@
 	
 
 	     position: relative;
-	     left: 534px;
+	    
 	
 			border-radius: 50%;
 		}
@@ -72,7 +72,6 @@
 
 }
 .search-contain {
-	margin-top: 55px;
 }
 /*to cange only one form and not all give unique class name like  class="search-form" */
  .search-btn {
@@ -142,26 +141,26 @@ color:rgb(34,102,102);
   width: 100%;
 
 }
-.gallery-box img {
-  height: auto;
-  width: 250px;
-}
+
 .card {
 	padding-right: 10px;
-	padding-left: 10px
+	padding-left: 10px;
+
 }
 .users-profile-pic  {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: whitesmoke;
 	margin-bottom: 11px;
 	width: 100%;
 }
 .users-profile-pic img {
-	margin: auto;
 	margin: 10px 0px;
 	border-radius: 50%;
 	height:225px;
 	width: 225px;
 	object-fit: cover;
-	margin-left: 82px;
+
 }
 .name-sec {
 	margin-top: -5px;
@@ -216,7 +215,7 @@ color:rgb(34,102,102);
 }
 
 .header-rightside {
-	padding-top: 12px;
+  margin-top: -33px;
 }
 .header-rightside img {
 	height: 35px;
@@ -263,11 +262,17 @@ color:rgb(34,102,102);
 @media (max-width: 1320px) {
 	.tab-section {
 	padding: 10px;
-	margin-top: 160px;
+
 }
 }
 @media (max-width: 1045px) {
-
+   .circle-logo {display: none}
+   .search-form, .search-btn{ 
+	 margin-top: 0px;
+}
+.header-rightside {
+  margin-top: 10px;
+}
   .box-body h4{
     margin-top: 5px;
   }
@@ -366,15 +371,16 @@ color:rgb(34,102,102);
         </a>
    </div>
 
-   				
-   
+   	<center>	
+   <div class="circle-logo">
+   					<center> <div  class=" login-brand-i glyphicon glyphicon-fire"></div></center>  
+   				</div>
+   	</center>	
    <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
   
       <ul class = "nav navbar-nav">
       	<li>
-      		<li><div class="circle-logo">
-   					<center> <div  class=" login-brand-i glyphicon glyphicon-fire"></div></center>  
-   				</div></li>
+      		<li></li>
 	       <div class="search-contain">
 	            <form class="navbar-form" role="search" id="navBarSearchForm">
 	              <div class="input-group">
@@ -441,7 +447,9 @@ color:rgb(34,102,102);
 	  				<div>
 		  				<div class="card">
 		  					<div class="users-profile-pic img-thumbnail">
-		  						<img src="https://images.unsplash.com/photo-1463430144406-394c977562d7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a9fc9b740bd7017f672c4baf212e6caf" width="100%;">
+		  						<CENTER>
+		  							<img src="https://images.unsplash.com/photo-1463430144406-394c977562d7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a9fc9b740bd7017f672c4baf212e6caf" width="100%;">
+		  						</CENTER>
 		  					</div>
 		  				
 		  				  
