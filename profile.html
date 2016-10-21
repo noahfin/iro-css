@@ -55,6 +55,10 @@
     padding-top: 9px;
 
    }
+   	.tab-section {
+	padding-left: 20px;
+
+}
   .logo-contain {
     margin: auto;
   }
@@ -143,23 +147,30 @@ color:rgb(34,102,102);
 }
 
 .card {
-	padding-right: 10px;
-	padding-left: 10px;
+
+  margin: auto;
+
+	width: 400px;
 
 }
 .users-profile-pic  {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: whitesmoke;
+	margin: auto;
 	margin-bottom: 11px;
-	width: 100%;
+	border: none;;
+
+}
+.data-list , .users-profile-pic  {
+	width: 90%;
 }
 .users-profile-pic img {
 	margin: 10px 0px;
-	border-radius: 50%;
-	height:225px;
-	width: 225px;
+	width: 80%;
 	object-fit: cover;
+}
+.data-list {
 
 }
 .name-sec {
@@ -200,6 +211,7 @@ color:rgb(34,102,102);
 }
 .box {
 	/*background: whitesmoke;*/
+
 	border: 1px solid #eee;
 	margin-bottom: 14px;
 }
@@ -248,7 +260,10 @@ color:rgb(34,102,102);
 
 
 }
-
+.tab-section {
+	padding-left: 23px;
+	margin-top: 15px;
+}
 
 #navBarSearchForm input[type=text]{width:260px !important;}
 
@@ -258,6 +273,23 @@ color:rgb(34,102,102);
     padding: 17px;
 }
 
+@media (max-width: 1420px) {
+		.users-profile-pic  {
+    margin-left: 0px;
+
+}
+.data-list , .users-profile-pic  {
+	width: 90%;
+}
+.users-profile-pic img {
+	margin: 10px 0px;
+	height:290px;
+	width: 290px;
+	object-fit: cover;
+}
+
+}
+}
 
 @media (max-width: 1320px) {
 	.tab-section {
@@ -446,15 +478,15 @@ color:rgb(34,102,102);
 	  		</div>
 	  			<div class="col-xs-4 top left-card"  >
 	  				<div>
+	  					<div class="well inner-well">
 		  				<div class="card">
-		  					<div class="users-profile-pic img-thumbnail">
-		  						<CENTER>
+		  					<center>
+		  					<div class="users-profile-pic ">
 		  							<img src="https://images.unsplash.com/photo-1463430144406-394c977562d7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a9fc9b740bd7017f672c4baf212e6caf" width="100%;">
-		  						</CENTER>
 		  					</div>
-		  				
+		  					</center>
 		  				  
-		  					 <ul class="list-group">
+		  					 <ul class="list-group data-list">
 								  <li class="list-group-item"><span  class=" inspire-icon glyphicon glyphicon-fire"><span class="iner-span"> insired</span> </span>
 							      <span class="span-amount"> 127</span>
 							    </li>
@@ -465,6 +497,7 @@ color:rgb(34,102,102);
 							     <span class="span-amount"> 311</span>
 							    </li>
 							  </ul>
+		  				</div>
 		  				</div>
 		  				<div class="name-sec ">
 	  					<h1 class="_2SAkc" data-reactid=".fhahs1np4w.2.0.0.2.0">Hannes Wolf</h1>
